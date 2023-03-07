@@ -14,7 +14,7 @@ frontend:
       commands:
         - ls -la
   artifacts:
-    baseDirectory: .next
+    baseDirectory: frontend/.next
     files:
       - '**/*'
   cache:
