@@ -12,9 +12,9 @@ frontend:
         - npm run build
     postBuild:
       commands:
-        - ls -la
+        - cp -R .next ../.next
   artifacts:
-    baseDirectory: frontend/.next
+    baseDirectory: .next
     files:
       - '**/*'
   cache:
