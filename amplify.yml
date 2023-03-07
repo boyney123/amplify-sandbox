@@ -1,9 +1,9 @@
 version: 1
-appRoot: frontend
 frontend:
   phases:
     preBuild:
       commands:
+        - cd frontend
         - ls -la
         - npm ci
     build:
@@ -14,7 +14,7 @@ frontend:
       commands:
         - ls -la
   artifacts:
-    baseDirectory: .next
+    baseDirectory: frontend/.next
     files:
       - '**/*'
   cache:
