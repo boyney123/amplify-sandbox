@@ -74,7 +74,7 @@ export default function Home() {
 }
 
 export const getServerSideProps = async () => {
-  function sleep(ms) {
+  function sleep(ms: number) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
