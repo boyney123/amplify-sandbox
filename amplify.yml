@@ -13,6 +13,8 @@ frontend:
     postBuild:
       commands:
         - cp -R .next ../.next
+        - cp -R public ../public
+        - cp -R styles ../styles
   artifacts:
     baseDirectory: .next
     files:
